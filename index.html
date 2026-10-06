@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ilya Lapidus – Junior QA Engineer</title>
+<meta name="description" content="Portfolio of Ilya Lapidus, junior QA engineer (manual and automation). Test automation for web, API, Android and database.">
+<style>
+  :root {
+    --bg: #f3f4f8;
+    --surface: #ffffff;
+    --ink: #1b1f3b;
+    --muted: #5a6078;
+    --line: #d9dcea;
+    --accent: #2447f5;
+    --accent-ink: #ffffff;
+    --pass: #dcf3e6;
+    --pass-ink: #14532d;
+    box-sizing: border-box;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12141f;
+      --surface: #1b1e2e;
+      --ink: #eceefa;
+      --muted: #a3a9c4;
+      --line: #2c3047;
+      --accent: #7d95ff;
+      --accent-ink: #12141f;
+      --pass: #173a28;
+      --pass-ink: #b7ecce;
+    }
+  }
+  *, *::before, *::after { box-sizing: inherit; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 56px 20px 40px; }
+  h1 { font-size: clamp(2.3rem, 7vw, 3.4rem); line-height: 1.05; margin: 0 0 12px; letter-spacing: -0.02em; }
+  h2 { font-size: 1.4rem; margin: 56px 0 16px; letter-spacing: -0.01em; }
+  h3 { font-size: 1.05rem; margin: 0 0 4px; }
+  p { margin: 0 0 14px; max-width: 62ch; }
+  a { color: var(--accent); }
+  a:focus-visible, .btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  .role { font-size: 1.25rem; color: var(--muted); margin: 0 0 20px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+  .btn {
+    display: inline-block; padding: 11px 20px; border-radius: 8px;
+    text-decoration: none; font-weight: 600; border: 2px solid var(--accent);
+  }
+  .btn.primary { background: var(--accent); color: var(--accent-ink); }
+  .btn.secondary { color: var(--accent); }
+
+  .project { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 24px; }
+  .layers { list-style: none; margin: 20px 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+  .layers li { background: var(--pass); color: var(--pass-ink); border-radius: 8px; padding: 12px 14px; }
+  .layers strong { display: block; }
+  .layers span { font-size: 0.92rem; }
+  .stack { color: var(--muted); margin-bottom: 18px; }
+
+  .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px 28px; }
+  .skills ul { margin: 6px 0 0; padding-left: 18px; }
+  .skills li { margin-bottom: 2px; }
+
+  dl { margin: 0; }
+  dt { font-weight: 600; margin-top: 14px; }
+  dd { margin: 2px 0 0; color: var(--muted); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 64px; padding-top: 20px; color: var(--muted); font-size: 0.92rem; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<main>
+
+  <header>
+    <h1>Ilya Lapidus</h1>
+    <p class="role">Junior QA Engineer, manual and automation</p>
+    <p>I test software and build automated tests for web, API, Android and databases. I finished a 360-hour QA course and I am looking for my first job in QA.</p>
+    <div class="actions">
+      <a class="btn primary" href="https://github.com/IlyaQaTest">See my GitHub</a>
+      <a class="btn secondary" href="#contact">Contact me</a>
+    </div>
+  </header>
+
+  <section id="project">
+    <h2>Main project: PhoneBook 2.0</h2>
+    <div class="project">
+      <p>An end-to-end test automation framework for a phonebook application. One project tests the application on four levels, and integration tests combine them.</p>
+      <ul class="layers">
+        <li><strong>Web UI</strong><span>Selenium, Page Object</span></li>
+        <li><strong>REST API</strong><span>API clients and DTOs</span></li>
+        <li><strong>Android</strong><span>Appium</span></li>
+        <li><strong>Database</strong><span>MySQL</span></li>
+      </ul>
+      <p class="stack">TestNG, Allure reports, Gradle, GitHub Actions for smoke tests.</p>
+      <a href="https://github.com/IlyaQaTest/PhoneBook2.0">Read the code on GitHub</a>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div>
+        <h3>Test automation</h3>
+        <ul>
+          <li>Java, OOP, Page Object</li>
+          <li>Selenium, Appium</li>
+          <li>RestAssured</li>
+          <li>TestNG, JUnit</li>
+          <li>Allure</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Testing and tools</h3>
+        <ul>
+          <li>Manual testing</li>
+          <li>Postman, Swagger</li>
+          <li>SQL, MySQL</li>
+          <li>Jira</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Build and delivery</h3>
+        <ul>
+          <li>Git, GitHub</li>
+          <li>Maven, Gradle</li>
+          <li>Jenkins</li>
+          <li>Docker</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>Education and languages</h2>
+    <dl>
+      <dt>Software QA Manual and Automation, Tel-Ran (360 hours)</dt>
+      <dd>Java, software testing, test automation, SQL. Finished 2026.</dd>
+      <dt>Languages</dt>
+      <dd>Russian (native), Hebrew (fluent), English (technical).</dd>
+    </dl>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>I am open to junior QA roles, manual or automation. The best way to reach me is email.</p>
+    <!-- TODO: replace the email and the LinkedIn address with your own -->
+    <p>
+      Email: <a href="mailto:your.email@example.com">your.email@example.com</a><br>
+      LinkedIn: <a href="https://www.linkedin.com/in/your-profile">linkedin.com/in/your-profile</a><br>
+      GitHub: <a href="https://github.com/IlyaQaTest">github.com/IlyaQaTest</a>
+    </p>
+  </section>
+
+  <footer>Ilya Lapidus, Israel</footer>
+
+</main>
+</body>
+</html>
